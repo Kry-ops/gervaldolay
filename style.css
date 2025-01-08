@@ -1,0 +1,359 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  background-color: #100242;
+  
+}
+
+
+.navbar {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #070022;
+  padding: 25px 0;
+  z-index: 1000; 
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.navbar ul li a {
+  color: rgba(143, 125, 228, 0.991);
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.navbar ul li a:hover {
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  color: #100242;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  box-shadow: 0 0 20px rgba(58, 27, 183, 0.7);
+}
+
+@keyframes borderAnimation {
+  0% {
+    border: 2px solid transparent;
+  }
+  50% {
+    border: 2px solid #3a1bb7; 
+  }
+  100% {
+    border: 2px solid transparent;
+  }
+}
+
+.navbar ul li a:hover {
+  animation: borderAnimation 1s infinite;
+}
+
+
+
+
+/* HOME */
+.gambar {
+  width: 100%;
+  margin-top: 0px;
+  background-image: url(gambar/latar\ belakang\ home.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.menu {
+  display: inline-block;
+  height: 650px;
+  width: 200px;
+  padding: 20px;
+  margin: 20px; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(240, 248, 255);
+  box-shadow: #070022;
+  border-radius: 40px;
+}
+
+.teks1 {
+  color: #100242;
+  font-size:40px;
+  padding-top: 100px;
+  text-align: center;
+}
+
+#typewriter {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  color:#100242;
+}
+
+.teks2 {
+  color:#070022;
+  font-size:20px;
+  padding-top: 50px;
+  text-align:center;
+  margin: 20px;
+}
+
+.AAA {
+  color: rgb(240, 248, 255); 
+  font-size: 150px;
+  margin-left: 500px;
+  margin-right: 500px;
+  position: absolute; 
+  top: 500px;
+  left: 100px;
+  width: 100%;
+  text-shadow: 0 0 20px #3a1bb7, 0 0 30px #3a1bb7, 0 0 40px #3a1bb7;
+  animation: shadowCycle 3s infinite; 
+}
+
+@keyframes shadowCycle {
+  0% {
+    text-shadow: 0 0 20px #3a1bb7, 0 0 30px #3a1bb7, 0 0 40px #3a1bb7;
+  }
+  25% {
+    text-shadow: 0 0 20px #0f0781, 0 0 30px #0f0781, 0 0 40px #0f0781;
+  }
+  50% {
+    text-shadow: 0 0 20px #070022, 0 0 30px #070022, 0 0 40px #070022;
+  }
+  75% {
+    text-shadow: 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000;
+  }
+  100% {
+    text-shadow: 0 0 20px #3a1bb7, 0 0 30px #3a1bb7, 0 0 40px #3a1bb7;
+  }
+}
+
+
+/* ABOUT ME */
+.About{
+  width: 100%;
+  height: 100vh;
+  background-color: aliceblue;
+}
+
+.Yah {
+  display: contents;
+  width: 200px;
+  padding: 20px;
+  margin: 20px; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(27, 88, 141);
+  box-shadow:#070022;
+  border-radius: 40px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.vvv {
+  margin: 40px;
+  color: #100242;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  text-align:justify;
+}
+
+.K {
+  color: #100242;
+  font-size:30px;
+  text-align: center;
+}
+
+.container-gallery {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  flex-wrap: wrap; 
+  width: 100%;
+  height: 35%;
+  padding: 2px;
+  text-align: center;
+  object-fit: contain;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #070022;
+  width: 200px;
+  font-style: normal;
+  color: #070022;
+  -webkit-text-fill-color: aliceblue;
+  -webkit-text-stroke-width: 0.5px; 
+  -webkit-text-stroke-color: black;
+  font-size: x-large;
+  background-color: #070022;
+  box-shadow: 0 4px 6px #0f0781; 
+  transition: all 0.3s ease-in-out; 
+}
+
+div.gallery:hover {
+  border: 4px solid #0f0781;
+  box-shadow: 0 8px 12px #100242; 
+  transition: all 0.3s ease-in-out;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 150px;
+  filter: brightness(50%); 
+  transition: all 0.3s ease-in-out; 
+}
+
+div.gallery:hover img {
+  filter: brightness(100%); 
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+
+/* CONTACT */
+.contact{
+  width: 100%;
+  height: 100vh;
+  background-color:#100242;
+}
+
+.i {
+  color:aliceblue;
+  font-size:40px;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.cnt {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  flex-wrap: wrap; 
+  width: 100%;
+  height: 35%;
+  padding: 2px;
+  text-align: center;
+  object-fit: contain;
+  margin-top: 100px;
+}
+
+div.hubungi {
+  margin: 20px;
+  border: 1px solid #070022;
+  width: 200px;
+  font-style: normal;
+  color: #070022;
+  -webkit-text-fill-color: aliceblue;
+  -webkit-text-stroke-width: 0.5px; 
+  -webkit-text-stroke-color: black;
+  font-size: x-large;
+  background-color: #070022;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); 
+  transition: all 0.3s ease-in-out; 
+}
+
+div.hubungi:hover {
+  border: 4px solid #ffffffb6;
+  box-shadow: 0 8px 12px rgba(255, 255, 255, 0.8); 
+  transition: all 0.3s ease-in-out;
+}
+
+div.hubungi img {
+  width: 100%;
+  height: 150px;
+  filter: brightness(20%); 
+  transition: all 0.3s ease-in-out; 
+}
+
+div.hubungi:hover img {
+  filter: brightness(100%); 
+}
+
+/* js */
+.reveal {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* 2 */
+.navbar a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.navbar a.active {
+  color:aliceblue; 
+  font-weight: bold;
+}
+
+
+/* 3 */
+/* Efek Bintang Jatuh */
+@keyframes fallingStars {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+  }
+  100% {
+    transform: translateY(0vh) translateX(100px);
+  }
+}
+
+.star {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  animation: fallingStars linear infinite;
+  opacity: 0.8;
+}
+
+.star:nth-child(odd) {
+  animation-duration: 3s;
+}
+
+.star:nth-child(even) {
+  animation-duration: 4s;
+}
+
+.star:nth-child(3n) {
+  animation-duration: 5s;
+}
+
+.star:nth-child(4n) {
+  animation-duration: 6s;
+}
